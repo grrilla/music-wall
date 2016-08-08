@@ -1,0 +1,7 @@
+<h1>Music Haul - Show me yo' moves!</h1>
+<hr/>
+<% @tracks.each do |track|%>
+  <div class="listing">
+    <h3><a href='<%= track.url %>'><%= track.title %>, <small> by <%= track.author %></small></a></h3>
+  </div>
+<% end %>
