@@ -1,7 +1,8 @@
-<h1>Music Haul - Show me yo' moves!</h1>
+<h1>Music Haul - Show me yo' tunes!</h1>
 <hr/>
-<% @tracks.each do |track|%>
+<% @tracks.each do |track| %>
   <div class="listing">
     <h3><a href='<%= track.url %>'><%= track.title %>, <small> by <%= track.author %></small></a></h3>
   </div>
 <% end %>
+<p><a href="/tracks/new">Add another tune!</a></p>
